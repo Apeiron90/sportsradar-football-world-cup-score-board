@@ -1,0 +1,10 @@
+<form class="add-match-component"
+      (submit)="this.addMatch()">
+  <input type="text"
+         placeholder="Home team..."
+         [formControl]="this.homeTeamFormControl">
+  <input type="text"
+         placeholder="Away team..."
+         [formControl]="this.awayTeamFormControl">
+  <button type="submit">Add Match</button>
+</form>

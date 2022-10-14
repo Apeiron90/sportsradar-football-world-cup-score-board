@@ -1,0 +1,14 @@
+<form class="edit-match-component"
+      (submit)="this.updateMatch()">
+  <input type="number"
+         class="edit-match-component__score-input"
+         min="0"
+         [formControl]="this.homeScoreFormControl"
+         placeholder="Home team score..." />
+  <input type="number"
+         class="edit-match-component__score-input"
+         min="0"
+         [formControl]="this.awayScoreFormControl"
+         placeholder="Away team score..." />
+  <button type="submit">Update</button>
+</form>

@@ -4,9 +4,7 @@ import { BehaviorSubject } from 'rxjs';
 import { MatchTuple } from '../models/match-tuple.model';
 import { matches } from '../mock/matches.mock';
 
-@Injectable({
-  providedIn: 'root',
-})
+@Injectable()
 export class MatchService {
   private matches: BehaviorSubject<Match[]> = new BehaviorSubject(matches);
 

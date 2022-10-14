@@ -1,0 +1,14 @@
+:host {
+  .list-matches-component {
+    &__match {
+      display: grid;
+      grid-template-columns: 35% 25% 35% 5%;
+      align-items: center;
+      margin: 12px 0;
+
+      &--score {
+        text-align: center;
+      }
+    }
+  }
+}

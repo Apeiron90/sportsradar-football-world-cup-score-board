@@ -1,0 +1,10 @@
+:host {
+  .edit-match-component {
+    display: flex;
+    flex-flow: row nowrap;
+
+    &__score-input {
+      width: 24px;
+    }
+  }
+}

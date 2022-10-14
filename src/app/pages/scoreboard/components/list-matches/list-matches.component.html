@@ -1,0 +1,9 @@
+<ul class="list-matches-component">
+  <li class="list-matches-component__match"
+      *ngFor="let match of this.matches$ | async; index as i ">
+    <span class="list-matches-component__match--teams">{{ match.teams.home }} - {{ match.teams.away }}</span>
+    <span class="list-matches-component__match--score">{{ match.score.home }} - {{ match.score.away }}</span>
+    <app-edit-match [index]="i"></app-edit-match>
+    <app-remove-match [index]="i"></app-remove-match>
+  </li>
+</ul>
